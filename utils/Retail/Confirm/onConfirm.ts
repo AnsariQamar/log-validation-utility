@@ -468,6 +468,8 @@ export const checkOnConfirm = (data: any, fulfillmentsItemsSet: any) => {
           if (!getValue('providerName')) {
             onCnfrmObj.sellerNameErr = `Invalid store name inside fulfillments in /${constants.ON_CONFIRM}`
           } else if (!_.isEqual(on_confirm.fulfillments[i].start.location.descriptor.name, getValue('providerName'))) {
+            console.log('on_confirm.fulfillments[i].start.location.descriptor.name', on_confirm.fulfillments[i].start.location.descriptor.name)
+            console.log('getValue(\'providerName\')', getValue('providerName'))
             onCnfrmObj.sellerNameErr = `store name  /fulfillments[${i}]/start/location/descriptor/name can't change`
           }
         } catch (error: any) {

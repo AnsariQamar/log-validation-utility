@@ -1,13 +1,13 @@
 {
     "context": {
-        "domain": "nic2004:52110",
+        "domain": "ONDC:RET13",
         "country": "IND",
         "city": "std:080",
         "action": "on_status",
-        "core_version": "1.1.0",
+        "core_version": "1.2.0",
         "bap_id": "preprod-ondc-buyer.adloggs.com",
         "bap_uri": "https://preprod-ondc-buyer.adloggs.com/ondcbuyerapi",
-        "transaction_id": "dd23e065-8906-4075-9ed2-e3f5addf4d48",
+        "transaction_id": "f01724e8-cac2-4def-b3dc-c4f51cfb4f40",
         "message_id": "234c0539-240e-48a8-a6f1-18eef46142f2",
         "timestamp": "2024-09-25T10:28:55.584Z",
         "ttl": "PT30S",
