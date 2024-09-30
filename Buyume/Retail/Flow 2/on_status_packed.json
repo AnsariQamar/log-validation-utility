@@ -9,7 +9,7 @@
         "bap_uri": "https://preprod-ondc-buyer.adloggs.com/ondcbuyerapi",
         "transaction_id": "f01724e8-cac2-4def-b3dc-c4f51cfb4f40",
         "message_id": "c42849a0-3e28-4c2a-b8e0-3e2d10933e77",
-        "timestamp": "2024-09-27T13:40:59.656Z",
+        "timestamp": "2024-09-27T14:40:59.656Z",
         "ttl": "PT30S",
         "bpp_id": "prelive.buyume.io",
         "bpp_uri": "https://prelive.buyume.io/ondc"
@@ -44,42 +44,52 @@
                     "city": "Delhi",
                     "state": "New Delhi",
                     "country": "IND",
-                    "area_code": "560001"
+                    "area_code": "560071"
                 },
                 "phone": "7304569870",
-                "created_at": "2024-09-27T13:36:57.656Z",
-                "updated_at": "2024-09-27T13:36:57.656Z"
+                "created_at": "2024-09-25T10:26:54.873Z",
+                "updated_at": "2024-09-25T10:26:54.873Z"
             },
             "fulfillments": [
                 {
                     "id": "1",
-                    "@ondc/org/provider_name": "Trends unisex salon",
+                    "@ondc/org/provider_name": "shree ji the family salon",
                     "state": {
                         "descriptor": {
                             "code": "Order-picked-up"
                         }
                     },
                     "type": "Delivery",
+                    "tracking": true,
+                    "@ondc/org/TAT": "P2D",
                     "start": {
                         "location": {
                             "id": "SALON_ADDRESS",
                             "descriptor": {
-                                "name": "Buyume"
+                                "name": "shree ji the family salon"
                             },
-                            "gps": "28.4032527,76.9504511"
+                            "gps": "21.828848,75.6169935",
+                            "address": {
+                                "locality": "canera bank",
+                                "city": "khargone",
+                                "state": "madhya pradesh",
+                                "area_code": "560001"
+                            }
                         },
                         "contact": {
                             "phone": "7304569870"
                         },
                         "time": {
                             "range": {
-                                "start": "2024-09-25T10:28:55.584Z",
-                                "end": "2024-09-25T10:28:55.584Z"
-                            },
-                            "timestamp": "2024-09-25T10:09:23.154Z"
+                                "start": "2024-09-27T14:40:59.656Z",
+                                "end": "2024-09-27T14:40:59.656Z"
+                            }
                         }
                     },
                     "end": {
+                        "person": {
+                            "name": "Paytm"
+                        },
                         "location": {
                             "gps": "12.95680530,77.63706540",
                             "address": {
@@ -89,7 +99,7 @@
                                 "city": "Delhi",
                                 "state": "New Delhi",
                                 "country": "IND",
-                                "area_code": "560071"
+                                "area_code": "560001"
                             }
                         },
                         "contact": {
@@ -97,8 +107,8 @@
                         },
                         "time": {
                             "range": {
-                                "start": "2024-09-25T10:28:55.584Z",
-                                "end": "2024-09-25T10:28:55.584Z"
+                                "start": "2024-09-27T14:41:59.656Z",
+                                "end": "2024-09-27T14:41:59.656Z"
                             }
                         }
                     }
@@ -192,7 +202,7 @@
                 }
             ],
             "created_at": "2024-09-27T13:40:59.656Z",
-            "updated_at": "2024-09-27T13:40:59.656Z"
+            "updated_at": "2024-09-27T14:40:59.656Z"
         }
     }
 }
