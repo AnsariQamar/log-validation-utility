@@ -7,9 +7,9 @@
         "core_version": "1.2.0",
         "bap_id": "preprod-ondc-buyer.adloggs.com",
         "bap_uri": "https://preprod-ondc-buyer.adloggs.com/ondcbuyerapi",
-        "transaction_id": "5828c894-6c8b-43e6-bc78-926bcfee06a8",
-        "message_id": "bd56961f-ee3b-4483-a987-a89ade79120d",
-        "timestamp": "2024-09-27T12:23:46.153Z",
+        "transaction_id": "906fce3b-203f-4854-8fdf-9e7687930ca5",
+        "message_id": "4ef550c1-f6cd-4680-8ba0-c532ba538c35",
+        "timestamp": "2024-09-28T12:23:49.153Z",
         "ttl": "PT30S"
     },
     "message": {
