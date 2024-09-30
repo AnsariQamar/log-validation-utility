@@ -33,8 +33,8 @@
             "fulfillments": [
                 {
                     "id": "1",
-                    "tracking":true,
-                    "@ondc/org/provider_name": "Trends unisex salon",
+                    "tracking": true,
+                    "@ondc/org/provider_name": "shree ji the family salon",
                     "state": {
                         "descriptor": {
                             "code": "Serviceable"
