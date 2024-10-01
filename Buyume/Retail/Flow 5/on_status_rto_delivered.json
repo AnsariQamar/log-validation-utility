@@ -17,7 +17,7 @@
     "message": {
         "order": {
             "id": "BM1003",
-            "state": "In-progress",
+            "state": "Cancelled",
             "provider": {
                 "id": "62a03165ced1fb651ad9230c",
                 "locations": [
@@ -30,6 +30,13 @@
                 {
                     "id": "66ea637d805c438709fccdf6",
                     "fulfillment_id": "1",
+                    "quantity": {
+                        "count": 0
+                    }
+                },
+                {
+                    "id": "66ea637d805c438709fccdf6",
+                    "fulfillment_id": "2",
                     "quantity": {
                         "count": 1
                     }
@@ -44,7 +51,7 @@
                     "city": "Delhi",
                     "state": "New Delhi",
                     "country": "IND",
-                    "area_code": "560071"
+                    "area_code": "560001"
                 },
                 "phone": "7304569870",
                 "created_at": "2024-09-29T15:27:53.153Z",
@@ -56,7 +63,7 @@
                     "@ondc/org/provider_name": "shree ji the family salon",
                     "state": {
                         "descriptor": {
-                            "code": "Out-for-delivery"
+                            "code": "Cancelled"
                         }
                     },
                     "type": "Delivery",
@@ -77,7 +84,8 @@
                             }
                         },
                         "contact": {
-                            "phone": "7304569870"
+                            "phone": "7304569870",
+                            "email": "tech@buyume.io"
                         },
                         "time": {
                             "range": {
@@ -104,7 +112,8 @@
                             }
                         },
                         "contact": {
-                            "phone": "7304569870"
+                            "phone": "7304569870",
+                            "email": "tech@buyume.io"
                         },
                         "time": {
                             "range": {
@@ -115,11 +124,159 @@
                     },
                     "tags": [
                         {
-                            "code": "routing",
+                            "code": "quote_trail",
                             "list": [
                                 {
                                     "code": "type",
-                                    "value": "P2P"
+                                    "value": "delivery"
+                                },
+                                {
+                                    "code": "id",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "currency",
+                                    "value": "INR"
+                                },
+                                {
+                                    "code": "value",
+                                    "value": "-325"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "precancel_state",
+                            "list": [
+                                {
+                                    "code": "updated_at",
+                                    "value": "2024-09-29T15:31:57.153Z"
+                                },
+                                {
+                                    "code": "fulfillment_state",
+                                    "value": "Out-for-delivery"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "cancel_request",
+                            "list": [
+                                {
+                                    "code": "reason_id",
+                                    "value": "001"
+                                },
+                                {
+                                    "code": "initiated_by",
+                                    "value": "preprod-ondc-buyer.adloggs.com"
+                                },
+                                {
+                                    "code": "rto_id",
+                                    "value": "preprod-ondc-buyer.adloggs.com"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "state": {
+                        "descriptor": {
+                            "code": "RTO-Delivered"
+                        }
+                    },
+                    "type": "RTO",
+                    "tracking": true,
+                    "@ondc/org/TAT": "P2D",
+                    "start": {
+                        "person": {
+                            "name": "Paytm"
+                        },
+                        "location": {
+                            "gps": "12.95680530,77.63706540",
+                            "address": {
+                                "name": "Paytm",
+                                "building": "10/53 raju partment",
+                                "locality": "greater kailash",
+                                "city": "Delhi",
+                                "state": "New Delhi",
+                                "country": "IND",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7304569870",
+                            "email": "tech@buyume.io"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2024-09-29T15:30:01.153Z",
+                                "end": "2024-09-29T15:30:01.153Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "id": "SALON_ADDRESS",
+                            "descriptor": {
+                                "name": "shree ji the family salon"
+                            },
+                            "gps": "21.828848,75.6169935",
+                            "address": {
+                                "locality": "canera bank",
+                                "city": "khargone",
+                                "state": "madhya pradesh",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7304569870",
+                            "email": "tech@buyume.io"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "quote_trail",
+                            "list": [
+                                {
+                                    "code": "type",
+                                    "value": "delivery"
+                                },
+                                {
+                                    "code": "id",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "currency",
+                                    "value": "INR"
+                                },
+                                {
+                                    "code": "value",
+                                    "value": "-325"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "precancel_state",
+                            "list": [
+                                {
+                                    "code": "updated_at",
+                                    "value": "2024-09-29T12:28:57.153Z"
+                                },
+                                {
+                                    "code": "fulfillment_state",
+                                    "value": "Pending"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "cancel_request",
+                            "list": [
+                                {
+                                    "code": "reason_id",
+                                    "value": "001"
+                                },
+                                {
+                                    "code": "initiated_by",
+                                    "value": "preprod-ondc-buyer.adloggs.com"
                                 }
                             ]
                         }
@@ -128,27 +285,19 @@
             ],
             "quote": {
                 "price": {
-                    "value": "325",
+                    "value": "0",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "title": "KELYN NATURALS GOLD FACIAL KIT",
                         "price": {
-                            "value": "325",
+                            "value": "0",
                             "currency": "INR"
                         },
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_id": "66ea637d805c438709fccdf6",
                         "item": {
-                            "quantity": {
-                                "maximum": {
-                                    "count": "1"
-                                },
-                                "available": {
-                                    "count": "1"
-                                }
-                            },
                             "price": {
                                 "value": "325",
                                 "currency": "INR"
@@ -167,14 +316,6 @@
                         "@ondc/org/title_type": "delivery",
                         "@ondc/org/item_id": "1",
                         "item": {
-                            "quantity": {
-                                "maximum": {
-                                    "count": "1"
-                                },
-                                "available": {
-                                    "count": "1"
-                                }
-                            },
                             "price": {
                                 "value": "325",
                                 "currency": "INR"
