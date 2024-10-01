@@ -7,16 +7,16 @@
         "core_version": "1.2.0",
         "bap_id": "preprod-ondc-buyer.adloggs.com",
         "bap_uri": "https://preprod-ondc-buyer.adloggs.com/ondcbuyerapi",
-        "transaction_id": "d916d569-f24a-4e20-b4ad-be9dc53b0100",
-        "message_id": "e56a1a07-5f46-4d26-8496-21aeb134aa90",
-        "timestamp": "2024-09-29T15:30:10.153Z",
+        "transaction_id": "13212113-040e-4861-b0ea-f331f9c5b85f",
+        "message_id": "df84ba2b-be58-45fc-bcc7-ca575ebb8d55",
+        "timestamp": "2024-09-30T15:30:10.153Z",
         "ttl": "PT30S",
         "bpp_id": "prelive.buyume.io",
         "bpp_uri": "https://prelive.buyume.io/ondc"
     },
     "message": {
         "order": {
-            "id": "BM1003",
+            "id": "BM1004",
             "state": "In-progress",
             "provider": {
                 "id": "62a03165ced1fb651ad9230c",
@@ -47,8 +47,8 @@
                     "area_code": "560001"
                 },
                 "phone": "7304569870",
-                "created_at": "2024-09-29T15:27:53.153Z",
-                "updated_at": "2024-09-29T15:27:53.153Z"
+                "created_at": "2024-09-30T15:27:53.153Z",
+                "updated_at": "2024-09-30T15:27:53.153Z"
             },
             "fulfillments": [
                 {
@@ -81,10 +81,10 @@
                         },
                         "time": {
                             "range": {
-                                "start": "2024-09-29T15:30:01.153Z",
-                                "end": "2024-09-29T15:30:01.153Z"
+                                "start": "2024-09-30T15:30:01.153Z",
+                                "end": "2024-09-30T15:30:01.153Z"
                             },
-                            "timestamp": "2024-09-29T15:30:10.153Z"
+                            "timestamp": "2024-09-30T15:30:10.153Z"
                         }
                     },
                     "end": {
@@ -108,8 +108,8 @@
                         },
                         "time": {
                             "range": {
-                               "start": "2024-09-29T15:30:01.153Z",
-                                "end": "2024-09-29T15:30:01.153Z"
+                               "start": "2024-09-30T15:30:01.153Z",
+                                "end": "2024-09-30T15:30:01.153Z"
                             }
                         }
                     },
@@ -120,6 +120,99 @@
                                 {
                                     "code": "type",
                                     "value": "P2P"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "state": {
+                        "descriptor": {
+                            "code": "Cancelled"
+                        }
+                    },
+                    "type": "Cancel",
+                    "tracking": true,
+                    "@ondc/org/TAT": "P2D",
+                    "start": {
+                        "person": {
+                            "name": "Paytm"
+                        },
+                        "location": {
+                            "gps": "12.95680530,77.63706540",
+                            "address": {
+                                "name": "Paytm",
+                                "building": "10/53 raju partment",
+                                "locality": "greater kailash",
+                                "city": "Delhi",
+                                "state": "New Delhi",
+                                "country": "IND",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7304569870",
+                            "email": "tech@buyume.io"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2024-09-30T15:29:05.153Z",
+                                "end": "2024-09-30T15:29:05.153Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "id": "SALON_ADDRESS",
+                            "descriptor": {
+                                "name": "shree ji the family salon"
+                            },
+                            "gps": "21.828848,75.6169935",
+                            "address": {
+                                "locality": "canera bank",
+                                "city": "khargone",
+                                "state": "madhya pradesh",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7304569870",
+                            "email": "tech@buyume.io"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "quote_trail",
+                            "list": [
+                                {
+                                    "code": "type",
+                                    "value": "delivery"
+                                },
+                                {
+                                    "code": "id",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "currency",
+                                    "value": "INR"
+                                },
+                                {
+                                    "code": "value",
+                                    "value": "-325"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "cancel_request",
+                            "list": [
+                                {
+                                    "code": "reason_id",
+                                    "value": "002"
+                                },
+                                {
+                                    "code": "initiated_by",
+                                    "value": "prelive.buyume.io"
                                 }
                             ]
                         }
@@ -196,8 +289,8 @@
                     "label": "Invoice"
                 }
             ],
-            "created_at": "2024-09-29T15:28:55.153Z",
-            "updated_at": "2024-09-29T15:30:10.153Z"
+            "created_at": "2024-09-30T15:28:55.153Z",
+            "updated_at": "2024-09-30T15:30:10.153Z"
         }
     }
 }

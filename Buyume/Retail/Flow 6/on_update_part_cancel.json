@@ -3,20 +3,20 @@
         "domain": "ONDC:RET13",
         "country": "IND",
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_update",
         "core_version": "1.2.0",
         "bap_id": "preprod-ondc-buyer.adloggs.com",
         "bap_uri": "https://preprod-ondc-buyer.adloggs.com/ondcbuyerapi",
-       "transaction_id": "1c331ca6-a0bf-4229-8d54-264abdd6ddbd",
-        "message_id": "1a04a1c5-8517-4684-aea6-684bda5f4d80",
-        "timestamp": "2024-09-29T12:28:57.153Z",
+        "transaction_id": "13212113-040e-4861-b0ea-f331f9c5b85f",
+        "message_id": "ccf7ef5b-08cf-479c-b208-d80a264f26aa",
+        "timestamp": "2024-09-30T15:29:05.153Z",
         "ttl": "PT30S",
         "bpp_id": "prelive.buyume.io",
         "bpp_uri": "https://prelive.buyume.io/ondc"
     },
     "message": {
         "order": {
-            "id": "BM1002",
+            "id": "BM1004",
             "state": "Created",
             "provider": {
                 "id": "62a03165ced1fb651ad9230c",
@@ -33,6 +33,13 @@
                     "quantity": {
                         "count": 1
                     }
+                },
+                {
+                    "id": "66ea637d805c438709fccdf6",
+                    "fulfillment_id": "2",
+                    "quantity": {
+                        "count": 1
+                    }
                 }
             ],
             "billing": {
@@ -46,9 +53,10 @@
                     "country": "IND",
                     "area_code": "560001"
                 },
+                "email":"paytm@google.com",
                 "phone": "7304569870",
-                "created_at": "2024-09-29T12:27:53.153Z",
-                "updated_at": "2024-09-29T12:27:53.153Z"
+                "created_at": "2024-09-30T15:27:53.153Z",
+                "updated_at": "2024-09-30T15:27:53.153Z"
             },
             "fulfillments": [
                 {
@@ -77,7 +85,8 @@
                             }
                         },
                         "contact": {
-                            "phone": "7304569870"
+                            "phone": "7304569870",
+                            "email":"tech@buyume.io"
                         }
                     },
                     "end": {
@@ -97,9 +106,103 @@
                             }
                         },
                         "contact": {
-                            "phone": "7304569870"
+                            "phone": "7304569870",
+                            "email":"tech@buyume.io"
                         }
                     }
+                },
+                {
+                    "id": "2",
+                    "state": {
+                        "descriptor": {
+                            "code": "Cancelled"
+                        }
+                    },
+                    "type": "Cancel",
+                    "tracking": true,
+                    "@ondc/org/TAT": "P2D",
+                    "start": {
+                        "person": {
+                            "name": "Paytm"
+                        },
+                        "location": {
+                            "gps": "12.95680530,77.63706540",
+                            "address": {
+                                "name": "Paytm",
+                                "building": "10/53 raju partment",
+                                "locality": "greater kailash",
+                                "city": "Delhi",
+                                "state": "New Delhi",
+                                "country": "IND",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7304569870",
+                            "email": "tech@buyume.io"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2024-09-30T15:29:05.153Z",
+                                "end": "2024-09-30T15:29:05.153Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "id": "SALON_ADDRESS",
+                            "descriptor": {
+                                "name": "shree ji the family salon"
+                            },
+                            "gps": "21.828848,75.6169935",
+                            "address": {
+                                "locality": "canera bank",
+                                "city": "khargone",
+                                "state": "madhya pradesh",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7304569870",
+                            "email": "tech@buyume.io"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "quote_trail",
+                            "list": [
+                                {
+                                    "code": "type",
+                                    "value": "delivery"
+                                },
+                                {
+                                    "code": "id",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "currency",
+                                    "value": "INR"
+                                },
+                                {
+                                    "code": "value",
+                                    "value": "-325"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "cancel_request",
+                            "list": [
+                                {
+                                    "code": "reason_id",
+                                    "value": "002"
+                                },
+                                {
+                                    "code": "initiated_by",
+                                    "value": "prelive.buyume.io"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "quote": {
@@ -127,6 +230,24 @@
                         }
                     },
                     {
+                        "title": "KELYN NATURALS GOLD FACIAL KIT",
+                        "price": {
+                            "value": "0",
+                            "currency": "INR"
+                        },
+                        "@ondc/org/title_type": "item",
+                        "@ondc/org/item_id": "66ea637d805c438709fccdf6",
+                        "item": {
+                            "price": {
+                                "value": "0",
+                                "currency": "INR"
+                            }
+                        },
+                        "@ondc/org/item_quantity": {
+                            "count": 1
+                        }
+                    },
+                    {
                         "title": "Delivery charges",
                         "price": {
                             "value": "0",
@@ -142,7 +263,7 @@
                 "status": "PAID",
                 "type": "ON-ORDER",
                 "params": {
-                    "amount": "325",
+                    "amount": "650",
                     "currency": "INR",
                     "transaction_id": "try_iusjwu3j2h3"
                 },
@@ -186,8 +307,8 @@
                     ]
                 }
             ],
-            "created_at": "2024-09-29T12:28:55.153Z",
-            "updated_at": "2024-09-29T12:28:57.153Z"
+            "created_at": "2024-09-30T15:28:55.153Z",
+            "updated_at": "2024-09-30T15:29:05.153Z"
         }
     }
 }

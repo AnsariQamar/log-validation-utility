@@ -3,21 +3,21 @@
         "domain": "ONDC:RET13",
         "country": "IND",
         "city": "std:080",
-        "action": "on_confirm",
+        "action": "on_status",
         "core_version": "1.2.0",
         "bap_id": "preprod-ondc-buyer.adloggs.com",
         "bap_uri": "https://preprod-ondc-buyer.adloggs.com/ondcbuyerapi",
-       "transaction_id": "1c331ca6-a0bf-4229-8d54-264abdd6ddbd",
-        "message_id": "1a04a1c5-8517-4684-aea6-684bda5f4d80",
-        "timestamp": "2024-09-29T12:28:57.153Z",
+        "transaction_id": "13212113-040e-4861-b0ea-f331f9c5b85f",
+        "message_id": "dbc86859-48be-4996-be09-5f6ec539af62",
+        "timestamp": "2024-09-30T15:30:01.153Z",
         "ttl": "PT30S",
         "bpp_id": "prelive.buyume.io",
         "bpp_uri": "https://prelive.buyume.io/ondc"
     },
     "message": {
         "order": {
-            "id": "BM1002",
-            "state": "Created",
+            "id": "BM1004",
+            "state": "In-progress",
             "provider": {
                 "id": "62a03165ced1fb651ad9230c",
                 "locations": [
@@ -47,8 +47,8 @@
                     "area_code": "560001"
                 },
                 "phone": "7304569870",
-                "created_at": "2024-09-29T12:27:53.153Z",
-                "updated_at": "2024-09-29T12:27:53.153Z"
+                "created_at": "2024-09-30T15:27:53.153Z",
+                "updated_at": "2024-09-30T15:27:53.153Z"
             },
             "fulfillments": [
                 {
@@ -56,7 +56,7 @@
                     "@ondc/org/provider_name": "shree ji the family salon",
                     "state": {
                         "descriptor": {
-                            "code": "Pending"
+                            "code": "Order-picked-up"
                         }
                     },
                     "type": "Delivery",
@@ -78,6 +78,12 @@
                         },
                         "contact": {
                             "phone": "7304569870"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2024-09-30T15:30:01.153Z",
+                                "end": "2024-09-30T15:30:01.153Z"
+                            }
                         }
                     },
                     "end": {
@@ -98,8 +104,107 @@
                         },
                         "contact": {
                             "phone": "7304569870"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2024-09-30T15:30:01.153Z",
+                                "end": "2024-09-30T15:30:01.153Z"
+                            }
                         }
                     }
+                },
+                {
+                    "id": "2",
+                    "state": {
+                        "descriptor": {
+                            "code": "Cancelled"
+                        }
+                    },
+                    "type": "Cancel",
+                    "tracking": true,
+                    "@ondc/org/TAT": "P2D",
+                    "start": {
+                        "person": {
+                            "name": "Paytm"
+                        },
+                        "location": {
+                            "gps": "12.95680530,77.63706540",
+                            "address": {
+                                "name": "Paytm",
+                                "building": "10/53 raju partment",
+                                "locality": "greater kailash",
+                                "city": "Delhi",
+                                "state": "New Delhi",
+                                "country": "IND",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7304569870",
+                            "email": "tech@buyume.io"
+                        },
+                        "time": {
+                            "range": {
+                                "start": "2024-09-30T15:29:05.153Z",
+                                "end": "2024-09-30T15:29:05.153Z"
+                            }
+                        }
+                    },
+                    "end": {
+                        "location": {
+                            "id": "SALON_ADDRESS",
+                            "descriptor": {
+                                "name": "shree ji the family salon"
+                            },
+                            "gps": "21.828848,75.6169935",
+                            "address": {
+                                "locality": "canera bank",
+                                "city": "khargone",
+                                "state": "madhya pradesh",
+                                "area_code": "560001"
+                            }
+                        },
+                        "contact": {
+                            "phone": "7304569870",
+                            "email": "tech@buyume.io"
+                        }
+                    },
+                    "tags": [
+                        {
+                            "code": "quote_trail",
+                            "list": [
+                                {
+                                    "code": "type",
+                                    "value": "delivery"
+                                },
+                                {
+                                    "code": "id",
+                                    "value": "1"
+                                },
+                                {
+                                    "code": "currency",
+                                    "value": "INR"
+                                },
+                                {
+                                    "code": "value",
+                                    "value": "-325"
+                                }
+                            ]
+                        },
+                        {
+                            "code": "cancel_request",
+                            "list": [
+                                {
+                                    "code": "reason_id",
+                                    "value": "002"
+                                },
+                                {
+                                    "code": "initiated_by",
+                                    "value": "prelive.buyume.io"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ],
             "quote": {
@@ -117,6 +222,14 @@
                         "@ondc/org/title_type": "item",
                         "@ondc/org/item_id": "66ea637d805c438709fccdf6",
                         "item": {
+                            "quantity": {
+                                "maximum": {
+                                    "count": "1"
+                                },
+                                "available": {
+                                    "count": "1"
+                                }
+                            },
                             "price": {
                                 "value": "325",
                                 "currency": "INR"
@@ -158,36 +271,14 @@
                     }
                 ]
             },
-            "tags": [
+            "documents": [
                 {
-                    "code": "bpp_terms",
-                    "list": [
-                        {
-                            "code": "tax_number",
-                            "value": "07ABHCS6941F1Z5"
-                        },
-                        {
-                            "code": "provider_tax_number",
-                            "value": "ABCDE1234F"
-                        },
-                        {
-                            "code": "np_type",
-                            "value": "MSN"
-                        }
-                    ]
-                },
-                {
-                    "code": "bap_terms",
-                    "list": [
-                        {
-                            "code": "tax_number",
-                            "value": "07ABHCS6941F1Z6"
-                        }
-                    ]
+                    "url": "https://buyume-app.s3.ap-south-1.amazonaws.com/fcOrderLabels/Label-2876713.pdf",
+                    "label": "Invoice"
                 }
             ],
-            "created_at": "2024-09-29T12:28:55.153Z",
-            "updated_at": "2024-09-29T12:28:57.153Z"
+            "created_at": "2024-09-30T15:28:55.153Z",
+            "updated_at": "2024-09-30T15:30:01.153Z"
         }
     }
 }

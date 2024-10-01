@@ -7,9 +7,9 @@
         "core_version": "1.2.0",
         "bap_id": "preprod-ondc-buyer.adloggs.com",
         "bap_uri": "https://preprod-ondc-buyer.adloggs.com/ondcbuyerapi",
-        "transaction_id": "8d11d875-85bb-45ad-a185-30a7e0616ce0",
-        "message_id": "cdb3a688-6d05-4f16-986a-144a3911e723",
-        "timestamp": "2024-09-28T12:26:53.153Z",
+        "transaction_id": "13212113-040e-4861-b0ea-f331f9c5b85f",
+        "message_id": "e507dd41-027c-410a-98d9-fa545a640137",
+        "timestamp": "2024-09-30T15:26:53.153Z",
         "ttl": "PT30S",
         "bpp_id": "prelive.buyume.io",
         "bpp_uri": "https://prelive.buyume.io/ondc"
@@ -46,14 +46,14 @@
             ],
             "quote": {
                 "price": {
-                    "value": "325",
+                    "value": "650",
                     "currency": "INR"
                 },
                 "breakup": [
                     {
                         "title": "KELYN NATURALS GOLD FACIAL KIT",
                         "price": {
-                            "value": "325",
+                            "value": "650",
                             "currency": "INR"
                         },
                         "@ondc/org/title_type": "item",
@@ -73,7 +73,7 @@
                             }
                         },
                         "@ondc/org/item_quantity": {
-                            "count": 1
+                            "count": 2
                         }
                     },
                     {
