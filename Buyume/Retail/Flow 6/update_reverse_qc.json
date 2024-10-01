@@ -8,7 +8,7 @@
         "bap_id": "preprod-ondc-buyer.adloggs.com",
         "bap_uri": "https://preprod-ondc-buyer.adloggs.com/ondcbuyerapi",
         "transaction_id": "13212113-040e-4861-b0ea-f331f9c5b85f",
-        "message_id": "3258e21b-cce6-40f5-baca-40815360c003",
+        "message_id": "43937e94-5916-4ae0-8af3-df0f99146994",
         "timestamp": "2024-09-30T15:33:01.153Z",
         "ttl": "PT30S",
         "bpp_id": "prelive.buyume.io",
@@ -78,7 +78,7 @@
                             "code": "Cancelled"
                         }
                     },
-                    "type": "Cancel",
+                    "type": "Return",
                     "tracking": true,
                     "@ondc/org/TAT": "P2D",
                     "start": {
