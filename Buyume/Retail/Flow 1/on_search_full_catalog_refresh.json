@@ -36,16 +36,6 @@
                     }
                 ]
             },
-            "bpp/fulfillments": [
-                {
-                    "id": "1",
-                    "type": "Delivery"
-                },
-                {
-                    "id": "2",
-                    "type": "Self-Pickup"
-                }
-            ],
             "bpp/providers": [
                 {
                     "id": "62a03165ced1fb651ad9230c",
@@ -100,8 +90,8 @@
                                     "holidays": []
                                 },
                                 "range": {
-                                    "start": "0800",
-                                    "end": "2300"
+                                    "start": "0000",
+                                    "end": "2359"
                                 }
                             }
                         }
@@ -203,9 +193,9 @@
                     ],
                     "categories": [
                         {
-                            "id": "SKINCARE1234",
+                            "id": "SHAMPOOCond1",
                             "descriptor": {
-                                "name": "BPC"
+                                "name": "Shampoos and Conditioners"
                             },
                             "tags": [
                                 {
@@ -233,7 +223,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -308,7 +298,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -383,7 +373,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -458,7 +448,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -535,7 +525,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -610,7 +600,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -685,7 +675,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -760,7 +750,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -835,7 +825,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -910,7 +900,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -985,7 +975,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -1060,7 +1050,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -1135,7 +1125,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -1211,7 +1201,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -1286,7 +1276,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -1361,7 +1351,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -1436,7 +1426,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -1513,7 +1503,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -1590,7 +1580,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
@@ -1665,7 +1655,7 @@
                                     "count": "99"
                                 },
                                 "maximum": {
-                                    "count": "100"
+                                    "count": "99"
                                 }
                             },
                             "price": {
