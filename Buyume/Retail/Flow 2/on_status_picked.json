@@ -60,7 +60,7 @@
                         }
                     },
                     "type": "Delivery",
-                    "tracking": true,
+                    "tracking": false,
                     "@ondc/org/TAT": "P2D",
                     "start": {
                         "location": {
