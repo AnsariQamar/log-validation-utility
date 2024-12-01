@@ -1048,6 +1048,9 @@ export const checkQuoteTrailSum = (
   }
   quoteTrailSum = Number(quoteTrailSum.toFixed(2))
   if (Math.round(priceAtConfirm) != Math.round(price + quoteTrailSum)) {
+    console.log('quoteTrailSum', quoteTrailSum)
+    console.log('priceAtConfirm', priceAtConfirm)
+    console.log('price', price)
     const key = `invldQuoteTrailPrices`
     errorObj[key] =
       `quote_trail price and item quote price sum for ${apiSeq} should be equal to the price as in ${constants.ON_CONFIRM}`
